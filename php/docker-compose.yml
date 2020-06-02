@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  php:
+    container_name: web-sample-php
+    hostname: web-sample-php
+    image: php:7.2-apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./source:/var/www/html
